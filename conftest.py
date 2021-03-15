@@ -22,7 +22,7 @@ def browser():
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-gpu')
-    browser = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver',
+    browser = webdriver.Chrome(executable_path='/usr/bin/google-chrome',
                                options=chrome_options)
     # browser.maximize_window()
     browser.implicitly_wait(5)
